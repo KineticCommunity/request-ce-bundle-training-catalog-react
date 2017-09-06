@@ -1,5 +1,6 @@
+/* eslint-disable */
 import React from 'react';
-import { ServiceCardLarge } from './ServiceCardLarge';
+// import { ServiceCardLarge } from './ServiceCardLarge';
 import { CatalogSearchContainer } from './CatalogSearchContainer';
 import { NavHeader } from '../Shared/NavHeader';
 
@@ -25,7 +26,10 @@ export const CatalogSearchResults = ({ query, forms }) =>
           <span className="label label-default">{query}</span>
         </h3>
         <div className="row">
-          { forms.map(form => <ServiceCardLarge form={form} key={form.slug} />) }
+          { forms.map(form =>
+            <div></div>
+            // <ServiceCardLarge form={form} key={form.slug} />
+          ) }
         </div>
       </section>
     </div>

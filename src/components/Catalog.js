@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { CatalogSearchContainer } from './Services/CatalogSearchContainer';
-import { ServiceCardSmall } from './Services/ServiceCardSmall';
+// import { ServiceCardSmall } from './Services/ServiceCardSmall';
 import { CatalogHomeSubmission } from './Requests/CatalogHomeSubmission';
 import { QuestionsLinkContainer } from './Shared/QuestionsLink';
 

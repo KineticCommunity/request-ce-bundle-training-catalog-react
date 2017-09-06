@@ -1,6 +1,7 @@
+/* eslint-disable */
 import React from 'react';
 import { QuestionsLinkContainer } from '../Shared/QuestionsLink';
-import { ServiceCardLarge } from './ServiceCardLarge';
+// import { ServiceCardLarge } from './ServiceCardLarge';
 import { NavHeader } from '../Shared/NavHeader';
 import { getColor, getAttributeValue } from '../../helpers/utils';
 
@@ -23,7 +24,10 @@ export const Category = ({ category, forms }) =>
               {
                 forms
                   .map(form => ({ form, categorySlug: category.slug, key: form.slug }))
-                  .map(props => <ServiceCardLarge {...props} />)
+                  .map(props =>
+                    <div></div>
+                    // <ServiceCardLarge {...props} />,
+                  )
               }
             </div>
           </div>
