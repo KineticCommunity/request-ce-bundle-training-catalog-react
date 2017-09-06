@@ -1,5 +1,5 @@
 import React from 'react';
-import { ServiceCardLarge } from './ServiceCard';
+import { ServiceCardLarge } from './ServiceCardLarge';
 import { CatalogSearchContainer } from './CatalogSearchContainer';
 import { NavHeader } from '../Shared/NavHeader';
 

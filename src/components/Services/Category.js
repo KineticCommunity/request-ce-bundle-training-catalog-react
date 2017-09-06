@@ -1,6 +1,6 @@
 import React from 'react';
 import { QuestionsLinkContainer } from '../Shared/QuestionsLink';
-import { ServiceCardLarge } from './ServiceCard';
+import { ServiceCardLarge } from './ServiceCardLarge';
 import { NavHeader } from '../Shared/NavHeader';
 import { getColor, getAttributeValue } from '../../helpers/utils';
 
