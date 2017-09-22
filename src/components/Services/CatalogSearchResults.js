@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React from 'react';
-// import { ServiceCardLarge } from './ServiceCardLarge';
+// import { ServiceCardLarge } from './ServiceCard';
 import { CatalogSearchContainer } from './CatalogSearchContainer';
 import { NavHeader } from '../Shared/NavHeader';
 
