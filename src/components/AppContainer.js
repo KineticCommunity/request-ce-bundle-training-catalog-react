@@ -24,6 +24,7 @@ import { FormContainer } from './Services/FormContainer';
 import { ModalFormContainer } from './Shared/ModalFormContainer';
 import { RequestListContainer } from './Requests/RequestListContainer';
 import { RequestShowContainer } from './Requests/RequestShowContainer';
+import { AllServices } from './Services/AllServices';
 
 const mapStateToProps = state => {
   const { space, categories, forms, me, systemError } = state;
@@ -73,6 +74,7 @@ export const App = props => {
       <Route path="/forms/:formSlug" component={FormContainer} />
       <Route exact path="/search" component={CatalogSearchResultsContainer} />
       <Route exact path="/requests" component={RequestListContainer} />
+      <Route exact path="/services" component={AllServices} />
       <Route exact path="/requests/:submissionId" component={FormContainer} />
       <Route exact path="/requests/:submissionId/:mode" component={RequestShowContainer} />
       <ModalFormContainer />
