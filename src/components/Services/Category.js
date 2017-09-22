@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React from 'react';
 import { QuestionsLinkContainer } from '../Shared/QuestionsLink';
-// import { ServiceCardLarge } from './ServiceCardLarge';
+// import { ServiceCardLarge } from './ServiceCard';
 import { NavHeader } from '../Shared/NavHeader';
 import { getColor, getAttributeValue } from '../../helpers/utils';
 
