@@ -1,7 +1,8 @@
+/* eslint-disable */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { CatalogSearchContainer } from './Services/CatalogSearchContainer';
-import { ServiceCardSmall } from './Services/ServiceCard';
+// import { ServiceCardSmall } from './Services/ServiceCardSmall';
 import { CatalogHomeSubmission } from './Requests/CatalogHomeSubmission';
 import { QuestionsLinkContainer } from './Shared/QuestionsLink';
 
@@ -68,7 +69,10 @@ export const Catalog = ({ profile, forms, submissions }) =>
                 forms
                   .filter(form => form.categories.indexOf('home-page-services') > -1)
                   .take(5)
-                  .map(form => <ServiceCardSmall form={form} key={form.slug} />)
+                  .map(form =>
+                    <div></div>
+                    // <ServiceCardSmall form={form} key={form.slug} />
+                  )
               }
             </div>
           </div>
