@@ -15,8 +15,8 @@ import { AppFooter } from './app/AppFooter';
 import { AppHeader } from './app/AppHeader';
 import { AppHelpLink } from './app/AppHelpLink';
 import { CatalogContainer } from './CatalogContainer';
-import { CategoryList } from './Services/CategoryList';
-// import { CategoryListContainer } from './Services/CategoryListContainer';
+// import { CategoryList } from './Services/CategoryList';
+import { CategoryListContainer } from './Services/CategoryListContainer';
 import { CategoryContainer } from './Services/CategoryContainer';
 import { CatalogSearchResultsContainer } from '../components/Services/CatalogSearchResultsContainer';
 import { Loading } from './app/Loading';
@@ -32,7 +32,7 @@ const mapStateToProps = state => {
     space: space.data,
     profile: me.data,
     forms: forms.data,
-    categories: categories.data,
+    // categories: categories.data,
     loading: categories.loading || forms.loading || me.loading || space.loading,
     errors: [...categories.errors, ...forms.errors],
     systemError,
@@ -67,8 +67,7 @@ export const App = props => {
       <AppHeader {...props} />
       <AppHelpLink />
       <Route exact path="/" component={CatalogContainer} />
-      <Route exact path="/categories" render={() => <CategoryList categories={props.categories} forms={props.forms} />} />
-      {/* Replace comment with step 14 of Create a container activity */}
+      <Route exact path="/categories" component={CategoryListContainer} />
       <Route exact path="/categories/:categorySlug" component={CategoryContainer} />
       <Route path="/categories/:categorySlug/:formSlug" component={FormContainer} />
       <Route path="/forms/:formSlug" component={FormContainer} />
