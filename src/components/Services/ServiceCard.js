@@ -1,5 +1,5 @@
 import React from 'react';
-// Add Link import from step 14 here.
+import { Link } from 'react-router-dom';
 
 const ServiceCardTop = props =>
   <div className="service-icon-wrapper">
@@ -10,7 +10,17 @@ const ServiceCardTop = props =>
 
 const ServiceCardBottom = props =>
   <div className="service-details-wrapper">
-    {/* Add Link element from step 15 here. */}
+    <h5 className="ellipsis">
+      <Link
+        to={
+          props.categorySlug
+            ? `/categories/${props.categorySlug}/${props.form.slug}`
+            : `/forms/${props.form.slug}`
+        }
+      >
+        {props.form.name}
+      </Link>
+    </h5>
     <p className="ellipsis">{props.form.description}</p>
   </div>;
 
