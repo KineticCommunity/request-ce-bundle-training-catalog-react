@@ -8,6 +8,7 @@ export const Form = object =>
     description: object.description,
     icon: getAttributeValue(object, constants.ATTRIBUTE_ICON, constants.DEFAULT_FORM_ICON),
     categories: object.categorizations.map(c => c.category.slug),
+    help: getAttributeValue(object, constants.ATTRIBUTE_HELP),
   });
 
 export const Category = object =>

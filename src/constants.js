@@ -17,6 +17,7 @@ export const ATTRIBUTE_ORDER = 'Sort Order';
 export const ATTRIBUTE_PARENT = 'Parent';
 export const ATTRIBUTE_SERVICE_DAYS_DUE = 'Service Days Due';
 export const ATTRIBUTE_SERVICE_OWNING_TEAM = 'Service Owning Team';
+export const ATTRIBUTE_HELP = 'Help';
 
 // Field names
 export const STATUS_FIELD = 'Status';
