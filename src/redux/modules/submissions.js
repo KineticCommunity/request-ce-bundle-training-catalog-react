@@ -27,6 +27,18 @@ export const defaultState = {
   next: null,
 };
 
+export const selectByColor = submissions =>
+  submissions
+    // fileter the Color Select forms out
+    .filter(s => s.form.slug === 'color-select')
+    // build the count of colors returns an object
+    .reduce((acc, submission) =>
+      acc.update(submission.values['Select A Color'], colorCount => colorCount + 1),
+      Map({ Red: 0, White: 0, Blue: 0, Green: 0 }))
+    // format data for the recharts library
+    .reduce((acc, v, k) =>
+      [...acc, { name: k, count: v }], []);
+
 const reducer = (state = defaultState, action) => {
   switch (action.type) {
     case types.FETCH_SUBMISSIONS:
