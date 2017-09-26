@@ -1,4 +1,4 @@
-import { List } from 'immutable';
+import { List, Map } from 'immutable';
 
 export const types = {
   FETCH_SUBMISSIONS: '@kd/catalog/FETCH_SUBMISSIONS',
