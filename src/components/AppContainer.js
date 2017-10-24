@@ -26,6 +26,7 @@ import { RequestListContainer } from './Requests/RequestListContainer';
 import { RequestShowContainer } from './Requests/RequestShowContainer';
 import { AllServices } from './Services/AllServices';
 import { ColorSelectChartContainer } from './Services/ColorSelectChartContainer';
+import { TeamsContainer } from './Services/TeamsContainer';
 
 const mapStateToProps = state => {
   const { space, categories, forms, me, systemError } = state;
@@ -78,6 +79,7 @@ export const App = props => {
       <Route exact path="/requests/:submissionId" component={FormContainer} />
       <Route exact path="/requests/:submissionId/:mode" component={RequestShowContainer} />
       <Route exact path="/chart" component={ColorSelectChartContainer} />
+      <Route exact path="/teams" component={TeamsContainer} />
       <ModalFormContainer />
       <AppFooter />
     </div>

@@ -10,6 +10,7 @@ import submissionsReducer from './modules/submissions';
 import submissionReducer from './modules/submission';
 import submissionCountsReducer from './modules/submissionCounts';
 import systemErrorReducer from './modules/systemError';
+import teamsReducer from './modules/teams';
 
 export default {
   app: appReducer,
@@ -24,4 +25,5 @@ export default {
   submission: submissionReducer,
   submissionCounts: submissionCountsReducer,
   systemError: systemErrorReducer,
+  teams: teamsReducer,
 };

@@ -6,6 +6,7 @@ import { watchSpace } from './sagas/space';
 import { watchSubmissions } from './sagas/submissions';
 import { watchSubmission, watchSubmissionPoller } from './sagas/submission';
 import { watchSubmissionCounts } from './sagas/submissionCounts';
+import { watchTeams } from './sagas/teams';
 
 export default function* () {
   yield [
@@ -18,5 +19,6 @@ export default function* () {
     watchSubmission(),
     watchSubmissionPoller(),
     watchSubmissionCounts(),
+    watchTeams(),
   ];
 }
