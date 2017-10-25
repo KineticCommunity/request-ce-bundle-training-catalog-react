@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { CatalogHomeSubmission } from './CatalogHomeSubmission';
+// import { CatalogHomeSubmission } from './CatalogHomeSubmission';
+import { SubmissionTable } from './SubmissionTable';
 import { NavHeader } from '../Shared/NavHeader';
 
 export const RequestList =
@@ -47,15 +48,7 @@ export const RequestList =
       </div>
       <div className="container requests">
         <div className="row">
-          {
-            submissions.map(submission =>
-              <CatalogHomeSubmission
-                key={submission.id}
-                submission={submission}
-                includeActions
-              />,
-            )
-          }
+          <SubmissionTable submissions={submissions.toJS()} />
           <div className="m-b-4">
             {
               hasPreviousPage &&

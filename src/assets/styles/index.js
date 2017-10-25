@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.css';
+import 'react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
 import 'font-awesome/css/font-awesome.css';
 import 'typeface-montserrat/index.css';
 import 'typeface-source-sans-pro/index.css';
